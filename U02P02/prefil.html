@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 2 - Prefil</title>
+</head>
+<body>
+    <h1>Formluario</h1>
+    <form>
+        <fieldset id="info-personal">
+            <legend>Información personal</legend>
+            <br>
+            <label for="estudiante">ESTUDIANTE </label>
+            <input type="text" name="estudiante" id="estudiante" readonly>
+            <br><br>
+            <label for="nombre">Nombre completo: </label>
+            <input type="text" name="nombre" id="nombre" placeholder="Ingrese nombre completo">
+            <br><br>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" placeholder="Ingrese email">
+            <br><br>
+            <label for="edad">Edad: </label>
+            <input type="number" name="edad" id="edad" placeholder="Ingrese edad">
+            <br><br>
+            <label for="nacionalidad">Nacionalidad: </label>
+            <select name="nacionalidad" id="nacionalidad">
+                <option value="argentina">Argentina</option>
+                <option value="chile">Chile</option>
+                <option value="brasil">Brasil</option>
+                <option value="uruguay">Uruguay</option>
+                <option value="bolivia">Bolivia</option>
+            </select>
+            <br><br>
+            <label for="condicion-laboral">Condición laboral: </label>
+            <select name="condicion-laboral" id="condicion-laboral">
+                <option value="desempleado">Desempleado</option>
+                <option value="en-busqueda-laboral">En búsqueda laboral</option>
+                <option value="part-time">Trabajo part time</option>
+                <option value="full-time">Trabajo full time</option>
+            </select>
+        </fieldset>
+        <fieldset id="gustos-personales">
+            <legend>Gustos personales</legend>
+            <label for="gustos-musicales">Gustos musicales: </label>
+            <input type="text" name="gustos-musicales" id="gustos-musicales" placeholder="Ej: Rock, Jazz, etc.">
+            <br><br>
+            <label for="comidas-preferidas">Comidas preferidas: </label>
+            <select name="comidas-preferidas" id="comidas-preferidas">
+                <option value="pizza">Pizza</option>
+                <option value="empanadas">Empanadas</option>
+                <option value="hamburguesas">Hamburguesas</option>
+                <option value="pastas">Pastas</option>
+            </select>
+            <br><br>
+            <input type="checkbox" value="recordar" name="recordar"> Recordar datos
+            <br><br>
+            <input type="submit" name="submit" value="Enviar Formulario">
+        </fieldset>
+    </form>
+</body>
+</html>
