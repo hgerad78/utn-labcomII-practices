@@ -1,0 +1,101 @@
+/* <!--Tener en cuenta los siguientes lineamientos y guías:
+● usar flex para la navegación.
+● usar flex grow para modelar el tamaño de los bloques flexibles.
+● usar display inline-flex para los <li> del menú.
+● utilizar fuentes de Google Fonts Lato, grosores 100, 400 y 900.
+● usar archivos de imagen en zip adjunto en CVG.
+● agregar borde inferior a los elementos del menú (similar al del link de INICIO) cuando
+se pasa el mouse por encima, con diferente color.--> */
+
+*{
+    font-family: 'Lato';
+
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    justify-content: center; /* HORIZONTAL */
+    align-items: center; /* VERTICAL */
+}
+
+header .logo {
+    height: 40px;
+    padding: 10px;
+}
+
+header nav {
+    flex-grow: 1;
+    display: flex;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+header nav ul li {
+    font-family: 'Lato', sans-serif;
+    color: #333333;
+    padding: 20px;
+    display: inline-flex;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333333;
+}
+
+header nav ul li:hover {
+    border-bottom: 2px solid #6e6e6e;
+}
+
+header nav ul li:active {
+    border-bottom: 2px solid #6e6e6e;
+}
+
+header .profile svg {
+    width: 30px;
+}
+
+header .profile a {
+    color:#333333;
+    padding: 10px 30px;
+    display: block;
+}
+
+.img-background {
+    background: url("../img/utn-alumnos.jpg");
+}
+.img-background h1 {
+    color: white;
+}
+
+.img-content p{
+    padding: 45px;
+    font-size: 18px;
+}
+
+.center-both {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-image{
+    display: flex;
+}
+
+.main-image div {
+    flex: 1;
+}
+
+main section {
+    display: flex;
+    min-height: 300px;
+}
+
