@@ -121,6 +121,14 @@ main p {
     margin-bottom: 16px;
 }
 
+main .ayuda-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin: auto;
+}
 /* Media Query: Estilos a aplicar sólo en pantallas mayores a 400px */
 @media (min-width: 400px) {
     main {
