@@ -1,0 +1,26 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    border-radius: 30px;
+    padding: 15px;
+    box-shadow: 3px 3px 15px;
+    line-height: 1rem;
+}
+
+#selector-ciudad {
+    padding: 6px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+#boton-selector-ciudad {
+    padding: 8px;
+    border: unset;
+    border-radius: 8px;
+    color: white;
+    background-color: var(--color-theme);
+}
