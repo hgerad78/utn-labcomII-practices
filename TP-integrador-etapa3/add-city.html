@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima App</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <!-- Estilos CSS -->
+    <script src="js/pages/add-city.js" defer></script>
+    <link rel="stylesheet" href="css/pages/add-city.css">
+    <link rel="stylesheet" href="css/common.css">
+</head>
+
+<body>
+    <header>
+        <h1>
+            <img src="img/headerClima.webp" alt=""><span>Clima App</span>
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Mi App</a></li>
+                <li class="current-page"><a href="add-city.html">Ciudad</a></li>
+                <li><a href="help.html">Ayuda</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Contenido principal de la página -->
+    <main>
+        <h2>Agregar Ciudad</h2>
+        <section>
+            <form action="">
+                <label for="ciudad-agregar">Ingrese la ciudad a agregar: </label>
+                <input type="text" id="ciudad-agregar" name="ciudad-agregar" placeholder='ej: Rosario o New York, US'>
+                <br>
+                <button type="button" id="boton-ciudad-agregar" onclick="agregarCiudad();">Agregar</button>
+            </form>
+        </section>
+        <div class="container-mensajes">
+            <div id="succes" class="mensaje">
+                <span>Ciudad agregada con éxito</span>
+            </div>
+            <div id="error" class="mensaje">
+                <span>Error: La ciudad ingresada no se encuentra en la API o se projudo un error al consultar</span>
+            </div>
+            <div id="warning" class="mensaje">
+                <span>La ciudad ingresada ya se encuentra almacenada</span>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>
+            Desarrollado con ♥ - LC2
+        </p>
+    </footer>
+</body>
+
+</html>

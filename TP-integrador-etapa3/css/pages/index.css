@@ -1,0 +1,43 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    border-radius: 30px;
+    padding: 15px;
+    box-shadow: 3px 3px 15px;
+    line-height: 1rem;
+    display: none;
+}
+
+#selector-ciudad {
+    padding: 6px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+#boton-selector-ciudad {
+    padding: 8px;
+    border: unset;
+    border-radius: 8px;
+    color: white;
+    background-color: var(--color-theme);
+}
+
+.loader {
+    margin-top: 100px;
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid var(--color-theme);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin .5s linear infinite;
+    display: none;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

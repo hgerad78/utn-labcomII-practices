@@ -1,0 +1,59 @@
+main section form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+#ciudad-agregar {
+    padding: 5px;
+    border: 1.5px solid black;
+    border-radius: 5px;
+    margin-top: 5px;
+    width: 100%;
+}
+
+#boton-ciudad-agregar {
+    border-radius: 8px;
+    border: none;
+    background-color: var(--color-theme);
+    color: white;
+    padding: 8px;
+    width: 35%;
+    margin-top: -15px;
+}
+
+.container-mensajes {
+    margin: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: .8rem;
+}
+
+.mensaje {
+    color: white;
+    padding: 15px;
+    width: 500px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    background-color: red;
+}
+
+#succes {
+    background-color: #28A745;
+    display: none;
+}
+
+#error {
+    background-color: #DC3545;
+    display: none;
+}
+
+#warning {
+    background-color: #FFC107;
+    display: none;
+}
